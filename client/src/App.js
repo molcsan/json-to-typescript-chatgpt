@@ -12,7 +12,7 @@ const App = () => {
 
 	const handleSubmit = () => {
 		setLoading(true);
-		fetch("http://localhost:4000/convert", {
+		fetch(`http://localhost:5176/convert`, {
 			method: "POST",
 			body: JSON.stringify({
 				value,
